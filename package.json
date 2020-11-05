@@ -20,6 +20,7 @@
   "homepage": "https://github.com/veracity/security-rules-test-site#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "feature-policy": "^0.5.0",
     "helmet": "^4.2.0"
   }
 }
