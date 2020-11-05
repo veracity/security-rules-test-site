@@ -1,0 +1,25 @@
+{
+  "name": "security-rules-test-site",
+  "version": "1.0.0",
+  "description": "This is a simple site hosted on heroku that implements strict CSP and security rules to see how what is the actual required config for new tracing scripts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veracity/security-rules-test-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veracity/security-rules-test-site/issues"
+  },
+  "homepage": "https://github.com/veracity/security-rules-test-site#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.2.0"
+  }
+}
