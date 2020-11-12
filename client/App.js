@@ -7,6 +7,7 @@ import {
 } from "react-router-dom"
 import Home from "./Home"
 import About from "./About"
+import FormsInteraction from "./FormsInteraction"
 
 export default function App() {
 	return (
@@ -23,6 +24,9 @@ export default function App() {
 							<li>
 								<Link to="/about">About</Link>
 							</li>
+							<li>
+								<Link to="/forms">Forms & interaction</Link>
+							</li>
 						</ul>
 					</nav>
 					<Switch>
@@ -31,6 +35,9 @@ export default function App() {
 						</Route>
 						<Route path="/about" exact>
 							<About />
+						</Route>
+						<Route path="/forms" exact>
+							<FormsInteraction />
 						</Route>
 					</Switch>
 				</div>

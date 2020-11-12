@@ -30,6 +30,12 @@ app.get("/about", async (req, res) => {
 	res.send(template)
 })
 
+app.get("/forms", async (req, res) => {
+	const template = await getTemplate({name: "Forms", content: "This is the forms page"})
+	res.send(template)
+})
+
+
 app.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`)
 })
