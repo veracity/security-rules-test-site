@@ -5,7 +5,13 @@ const featurePolicy = require("feature-policy")
 const app = express()
 const port = process.env.PORT || 3000
 
-app.use(helmet());
+app.use(helmet({
+	contentSecurityPolicy: {
+		directives: {
+			"default-src": ["'self'"]
+		}
+	}
+}));
 app.use(featurePolicy({
 	features: {
 		accelerometer: ["'none'"],
