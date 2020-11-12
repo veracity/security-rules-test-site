@@ -34,4 +34,4 @@ After completing Step 2, you should have a complete set of security headers need
 Run `npm run dev` to enable automatic restart of server when files change.
 
 ## Production
-Run `npm start` to run like in production.
+Run `npm run build` to build frontend, and then run `npm start` to start production server.

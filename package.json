@@ -7,7 +7,7 @@
     "start:frontend": "parcel ./client/index.js",
     "build": "rimraf ./dist && parcel build ./client/index.js --out-dir ./dist",
     "dev": "nodemon ./server.js",
-    "start": "npm run build && node ./server.js"
+    "start": "node ./server.js"
   },
   "repository": {
     "type": "git",
