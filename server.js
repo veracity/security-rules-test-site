@@ -12,56 +12,56 @@ app.use(helmet({
 		}
 	}
 }));
-app.use(featurePolicy({
-	features: {
-		accelerometer: ["'none'"],
-		ambientLightSensor: ["'none'"],
-		autoplay: ["'none'"],
-		battery: ["'none'"],
-		camera: ["'none'"],
-		displayCapture: ["'none'"],
-		documentDomain: ["'none'"],
-		documentWrite: ["'none'"],
-		encryptedMedia: ["'none'"],
-		executionWhileNotRendered: ["'none'"],
-		executionWhileOutOfViewport: ["'none'"],
-		fontDisplayLateSwap: ["'none'"],
-		fullscreen: ["'none'"],
-		geolocation: ["'none'"],
-		gyroscope: ["'none'"],
-		layoutAnimations: ["'none'"],
-		legacyImageFormats: ["'none'"],
-		loadingFrameDefaultEager: ["'none'"],
-		magnetometer: ["'none'"],
-		microphone: ["'none'"],
-		midi: ["'none'"],
-		navigationOverride: ["'none'"],
-		notifications: ["'none'"],
-		oversizedImages: ["'none'"],
-		payment: ["'none'"],
-		pictureInPicture: ["'none'"],
-		publickeyCredentials: ["'none'"],
-		push: ["'none'"],
-		serial: ["'none'"],
-		speaker: ["'none'"],
-		syncScript: ["'none'"],
-		syncXhr: ["'none'"],
-		unoptimizedImages: ["'none'"],
-		unoptimizedLosslessImages: ["'none'"],
-		unoptimizedLossyImages: ["'none'"],
-		unsizedMedia: ["'none'"],
-		usb: ["'none'"],
-		verticalScroll: ["'none'"],
-		vibrate: ["'none'"],
-		vr: ["'none'"],
-		wakeLock: ["'none'"],
-		xr: ["'none'"],
-		xrSpatialTracking: ["'none'"]
-	}
-}))
+// app.use(featurePolicy({
+// 	features: {
+// 		accelerometer: ["'none'"],
+// 		ambientLightSensor: ["'none'"],
+// 		autoplay: ["'none'"],
+// 		battery: ["'none'"],
+// 		camera: ["'none'"],
+// 		displayCapture: ["'none'"],
+// 		documentDomain: ["'none'"],
+// 		documentWrite: ["'none'"],
+// 		encryptedMedia: ["'none'"],
+// 		executionWhileNotRendered: ["'none'"],
+// 		executionWhileOutOfViewport: ["'none'"],
+// 		fontDisplayLateSwap: ["'none'"],
+// 		fullscreen: ["'none'"],
+// 		geolocation: ["'none'"],
+// 		gyroscope: ["'none'"],
+// 		layoutAnimations: ["'none'"],
+// 		legacyImageFormats: ["'none'"],
+// 		loadingFrameDefaultEager: ["'none'"],
+// 		magnetometer: ["'none'"],
+// 		microphone: ["'none'"],
+// 		midi: ["'none'"],
+// 		navigationOverride: ["'none'"],
+// 		notifications: ["'none'"],
+// 		oversizedImages: ["'none'"],
+// 		payment: ["'none'"],
+// 		pictureInPicture: ["'none'"],
+// 		publickeyCredentials: ["'none'"],
+// 		push: ["'none'"],
+// 		serial: ["'none'"],
+// 		speaker: ["'none'"],
+// 		syncScript: ["'none'"],
+// 		syncXhr: ["'none'"],
+// 		unoptimizedImages: ["'none'"],
+// 		unoptimizedLosslessImages: ["'none'"],
+// 		unoptimizedLossyImages: ["'none'"],
+// 		unsizedMedia: ["'none'"],
+// 		usb: ["'none'"],
+// 		verticalScroll: ["'none'"],
+// 		vibrate: ["'none'"],
+// 		vr: ["'none'"],
+// 		wakeLock: ["'none'"],
+// 		xr: ["'none'"],
+// 		xrSpatialTracking: ["'none'"]
+// 	}
+// }))
 
 app.use((req, res, next) => {
-	res.set('Permissions-Policy', 'accelerometer=(), autoplay=(), battery=(), camera=(), fullscreen=(), geolocation=(), gyroscope=(), legacyImageFormats=(), magnetometer=(), microphone=(), midi=(), notifications=(), payment=(), push=(), serial=(), speaker=(), usb=(), vibrate=(), vr=(), xr=()')
+	res.set('Permissions-Policy', 'accelerometer=(), autoplay=(), battery=(), camera=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), notifications=(), payment=(), push=(), serial=(), speaker=(), usb=(), vibrate=(), vr=(), xr=()')
 	next()
 })
 
