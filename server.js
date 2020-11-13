@@ -37,6 +37,16 @@ app.get("/forms", async (req, res) => {
 	res.send(template)
 })
 
+app.get("/clarity/page1", async (req, res) => {
+	const template = await getTemplate({name: "MS Clarity page 1", content: "This is the Clarity page 1"})
+	res.send(template)
+})
+
+app.get("/clarity/page2", async (req, res) => {
+	const template = await getTemplate({name: "MS Clarity page 2", content: "This is the Clarity page 2"})
+	res.send(template)
+})
+
 
 app.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`)
