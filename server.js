@@ -10,7 +10,9 @@ app.use(express.static('dist'))
 app.use(helmet({
 	contentSecurityPolicy: {
 		directives: {
-			"default-src": ["'self'"]
+			"default-src": ["'self'"],
+			"script-src": ["'self'", "'sha256-G/MQ6FOCogcmC5qVjhuzKlTHpOlZzK/OTFy2Bxro+pY='", "*.clarity.ms"],
+			"connect-src": ["'self'", "*.clarity.ms"],
 		}
 	}
 }))
