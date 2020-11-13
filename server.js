@@ -10,8 +10,10 @@ app.use(express.static('dist'))
 app.use(helmet({
 	contentSecurityPolicy: {
 		directives: {
-			"default-src": ["'self'"]
-		}
+			"default-src": ["'self'"],
+			"script-src": ["'self'", "'sha256-SWOo5jzXsUoLkRb5e/kZobnN0UrpoeS3SFqbEQoZDl0='", "*.siteintercept.qualtrics.com"],
+			"connect-src": ["'self'", "siteintercept.qualtrics.com"]
+		},
 	}
 }))
 
@@ -25,12 +27,12 @@ app.get("/", async (req, res) => {
 	res.send(template)
 })
 
-app.get("/about", async (req, res) => {
+app.get("/qualtrics/page1", async (req, res) => {
 	const template = await getTemplate({name: "About", content: "This is the about page"})
 	res.send(template)
 })
 
-app.get("/forms", async (req, res) => {
+app.get("/qualtrics/page2", async (req, res) => {
 	const template = await getTemplate({name: "Forms", content: "This is the forms page"})
 	res.send(template)
 })
