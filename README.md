@@ -3,7 +3,7 @@ This is a simple site hosted on heroku that implements strict CSP and security r
 
 ## Security settings
 The security settings for this site should be as strict as possible. The master branch should have A+ on https://securityheaders.com/
-Any settings that lower this score must be approved by [Jonas Syrstad](jonas.syrstad@dnvgl.com).
+Any settings that lower this score must be approved by [Jonas Syrstad](mailto:jonas.syrstad@dnvgl.com).
 
 ## Test site
 The test site is hosted here: https://security-rules-test-site.herokuapp.com/
@@ -27,7 +27,7 @@ The site is currently in my personal account on Heroku (since it's free) - conta
 *Please* keep the branch around forever as it provides documentation of the test implementation.
 
 ### Step 3 - implementation
-After completing Step 2, you should have a complete set of security headers needed to run the service. If there are security policies that you are uncertain if Veracity allow, contact [Jonas Syrstad](jonas.syrstad@dnvgl.com).
+After completing Step 2, you should have a complete set of security headers needed to run the service. If there are security policies that you are uncertain if Veracity allow, contact [Jonas Syrstad](mailto:jonas.syrstad@dnvgl.com).
 
 
 ## Development 
