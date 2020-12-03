@@ -11,6 +11,8 @@ app.use(helmet({
 	contentSecurityPolicy: {
 		directives: {
 			"default-src": ["'self'"],
+			"img-src": ["'self'", "siteintercept.qualtrics.com"],
+			"style-src": ["'self'", "siteintercept.qualtrics.com"],
 			"script-src": ["'self'", "'sha256-SWOo5jzXsUoLkRb5e/kZobnN0UrpoeS3SFqbEQoZDl0='", "siteintercept.qualtrics.com", "*.siteintercept.qualtrics.com"],
 			"connect-src": ["'self'", "siteintercept.qualtrics.com"]
 		},
