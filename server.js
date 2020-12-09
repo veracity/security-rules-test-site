@@ -11,7 +11,8 @@ app.use(helmet({
 	contentSecurityPolicy: {
 		directives: {
 			"default-src": ["'self'"],
-			"img-src": ["'self'", "siteintercept.qualtrics.com"],
+			"img-src": ["'self'", "*.qualtrics.com"],
+			"frame-src": ["'self'", "*.qualtrics.com"],
 			"style-src": ["'self'", "siteintercept.qualtrics.com", "'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU='", "'sha256-f/ENRDjvsszgMJTxhHwOfkeBALoK3KX2WGdqhhWHObI='"],
 			"style-src-attr": ["'self'", "'unsafe-hashes'", "'sha256-+17AcPK/e5AtiK52Z2vnx3uG3BMzyzRr4Qv5UQsEbDU='", "'sha256-dgGu9RsYQs5fsG/dUKEbTIaM0U+fNh/6lwVQQy9grtw='", "'sha256-UfGzSwHxQvKcLjFhDqFiNosuOZd4nv6/WYIZ5W+Mzrw='", "'sha256-813i06waEiG5NRkGknqRiKi6L9t4XAVXmsGJvURmCgo='", "'sha256-2+dS+n9Pah47gYjmchfaYD5g/iEbiyoAg7SGmiJtn0Y='"],
 			"script-src": ["'self'", "'sha256-SWOo5jzXsUoLkRb5e/kZobnN0UrpoeS3SFqbEQoZDl0='", "siteintercept.qualtrics.com", "*.siteintercept.qualtrics.com"],
