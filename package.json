@@ -4,6 +4,7 @@
   "description": "This is a simple site hosted on heroku that implements strict CSP and security rules to see how what is the actual required config for new tracing scripts.",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start:frontend": "parcel ./client/index.js",
     "build": "rimraf ./dist && parcel build ./client/index.js --out-dir ./dist",
     "dev": "nodemon ./server.js",
@@ -19,11 +20,15 @@
   "bugs": {
     "url": "https://github.com/veracity/security-rules-test-site/issues"
   },
+  "resolutions": {
+    "node-forge": "^0.10.0"
+  },
   "homepage": "https://github.com/veracity/security-rules-test-site#readme",
   "dependencies": {
     "express": "^4.17.1",
     "helmet": "^4.2.0",
     "mustache": "^4.0.1",
+    "npm-force-resolutions": "0.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0"

@@ -29,9 +29,14 @@ The site is currently in my personal account on Heroku (since it's free) - conta
 ### Step 3 - implementation
 After completing Step 2, you should have a complete set of security headers needed to run the service. If there are security policies that you are uncertain if Veracity allow, contact [Jonas Syrstad](mailto:jonas.syrstad@dnvgl.com).
 
+## First time setup
+Run `npm install` to install dependencies.
 
 ## Development 
 Run `npm run dev` to enable automatic restart of server when files change.
 
 ## Production
 Run `npm run build` to build frontend, and then run `npm start` to start production server.
+
+## Vulnerable dependencies
+This repo uses `npm-force-resolutions` to make `npm` honor the `resolutions` in the `package.json` file. So if there is a dependency that has a vulnerable dependency you could add it to the `resolutions` as a last resort.
